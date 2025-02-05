@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap");
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Public Sans", sans-serif o !important;
+}
+.width100 {
+  width: 100%;
+}
+.width50 {
+  width: 50%;
+}
+.height100 {
+  height: 100%;
+}
+.heighth50 {
+  height: 50%;
+}
+.heightFill {
+  height: -webkit-fill-available;
+}
+.primaryButton.MuiButtonBase-root {
+  background: #ffffff;
+  border: 1px solid #012d72 !important;
+  border-radius: 4px !important;
+  color: #012d72 !important;
+  flex: none;
+  text-transform: none;
+}
+.secondaryButton.MuiButtonBase-root {
+  background: #cda467;
+  border: 1px solid #cda467 !important;
+  border-radius: 4px !important;
+  color: #000000 !important;
+  flex: none;
+  text-transform: none;
+  box-shadow: none !important;
+}
+
+/* ----------------------------- HEADER STYLES -------------------------- */
+.headerContainer {
+  align-items: flex-start;
+  padding: 3.5rem 20%;
+  background: #eef5ff;
+  border-radius: 0px 0px 80px 80px;
+}
+.queuedDocsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+.queuedDocs {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  gap: 0.5rem;
+  background: #f8f8f8;
+  border: 1px solid #e4e4e4;
+  box-shadow: none !important;
+}
+
+/* ----------------------------- BODY STYLES -------------------------- */
+
+.headertext {
+  /* Processing */
+
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  /* font-weight: 600; */
+  font-size: 20px;
+  line-height: 20px;
+
+  /* Primary Blue */
+  color: #012d72;
+}
+.processingDocs.MuiPaper-root {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  width: fit-content;
+  height: fit-content;
+  background-color: #f8f8f8;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px !important;
+  padding: 12px;
+  box-shadow: none !important;
+}
+.completedDocs.MuiPaper-root {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  width: fit-content;
+  height: fit-content;
+  background: #ffffff;
+  border: 1px solid rgba(25, 118, 210, 0.16);
+  border-radius: 4px !important;
+  padding: 12px;
+  box-shadow: none !important;
+}
+.documentName {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  /* identical to box height, or 88% */
+  display: flex;
+  align-items: center;
+
+  color: #666666;
+}
+.compPercText {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #666666;
+}
+.showInsightsButton.MuiButtonBase-root {
+  border-radius: 4px !important;
+  border: none;
+  color: #000000 !important;
+  flex: none;
+  text-transform: none;
+  box-shadow: none !important;
+  padding: 4px 8px;
+  gap: 10px;
+  height: 24px;
+  background: rgba(1, 45, 114, 0.07);
+  border-radius: 4px;
+}
+/* ----------------------------- SENTIMENT ANALYSIS -------------------------- */
+
+.sentimentAnalysisPopup.MuiPaper-root {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffff;
+  border: 1px solid rgba(25, 118, 210, 0.24);
+  box-shadow: 0px -4px 26px rgba(179, 198, 207, 0.22);
+  border-radius: 24px 24px 0px 0px;
+}
+
+.sentimentAnalysisHeader {
+  /* box-sizing: border-box; */
+  /* display: flex;
+  flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  width: calc(100% - 48px);
+  border-bottom: 1px solid rgba(25, 118, 210, 0.16);
+}
+.sentimentAnalysisDocumentTitle {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  color: #012d72;
+}
+.sentimentAnalysisCloseIcon.MuiIconButton-root {
+  color: #012d72;
+}
+.communitySentimentTitle {
+  margin-bottom: 8px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+
+  color: #6d6c6c;
+}
+.communitySentimentResult.MuiTypography-root {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.clusterContainer {
+  background: #f7fbff;
+  border-radius: 8px;
+  margin: 12px !important;
+  padding: 16px;
+}
+.clusterTitle.MuiTypography-root {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #0c2336;
+}
+
+.clusterSentiment.MuiTypography-root {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.clusterSubHeaders.MuiTypography-root {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+
+  color: #0c2336;
+}
+.sentimentCountHeader.MuiTypography-root {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #bbbcbc;
+}
+.sentimentCount.MuiTypography-root {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #012d72;
+  margin-left: 8px;
+}
+.viewAllBtn.MuiButtonBase-root {
+  padding: 4px 10px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid #012d72;
+  color: #012d72;
+  text-transform: none;
+  border-radius: 4px;
+}
+.commentsTimeline.MuiTimelineItem-root::before {
+  display: none;
+}
+
+.commentsTimeline.MuiTimelineDot-root {
+  color: transparent;
+  background-color: transparent;
+  border: 1px solid #1976d230;
+  box-shadow: none;
+}
+
+.commentsTimeline.MuiTimelineContent-root {
+  align-self: center;
+}
+
+.commentsTimeline.MuiTimeline-root {
+  margin: 0px;
+  padding-top: 0px;
+}
+.clusterIndex.MuiTypography-root {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #1565c0;
+}
+.clusterComments.MuiTypography-root {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-size: 14px;
+  color: #6d6c6c;
+  font-style: italic;
+}

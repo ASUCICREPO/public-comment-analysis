@@ -1,14 +1,8 @@
-# Welcome to your CDK TypeScript project
+# React + Vite
 
-This is a blank project for CDK development with TypeScript.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+Currently, two official plugins are available:
 
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
