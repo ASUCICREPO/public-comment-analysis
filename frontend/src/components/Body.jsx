@@ -162,7 +162,7 @@ function Body() {
                       Analysis Summary
                     </Typography>
                     <Typography variant="body2" paragraph>
-                      Total Comments: {documentDetails.analysis.clustering_metadata?.total_comments || 0}
+                      Total Comments: {documentDetails.analysis.processing_metadata?.total_comments || 0}
                     </Typography>
 
                     {clusters.length > 0 ? (
