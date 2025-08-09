@@ -157,6 +157,38 @@ public-comment-analysis/
 └── scripts/                # Utility scripts
 ```
 
+### Recent Improvements
+The latest updates focus on improving **pipeline reliability**, **frontend accuracy**, and **workflow efficiency** across the clustering and analysis system.
+
+#### Pipeline Fixes 
+- Fixed SageMaker clustering failures by granting **full read/write S3 permissions**:
+  - `s3:GetObject`, `s3:PutObject`, `s3:ListBucket`
+  - `s3:DeleteObject`, `s3:GetObjectVersion`
+- Ensured SageMaker can read and write to the clustering bucket, preventing silent failures.
+- Updated `clustering-stack.ts` and `public-comment-analysis.ts` to correct insufficient permissions.
+
+#### Clustering Logic Enhancements
+- Improved cluster size handling for **small datasets**:
+  - ≤ 2 texts → 1 cluster  
+  - ≤ 5 texts → max of 2 clusters
+- Enhanced silhouette score calculation with error handling.
+- Added **dynamic cluster adjustment** based on dataset size.
+
+#### State Management and Progress Tracking
+- Preserved **existing state** during progress updates to prevent overwrites.
+- Added a “completed” stage and ensured accurate **100% progress display**.
+- Prevented race conditions that could mark completed tasks as incomplete.
+
+#### Workflow & WebSocket Optimization
+- Removed **duplicate status updates** (70+ redundant lines deleted).
+- Streamlined completion handling in the **clustering pipeline**.
+- Eliminated unnecessary WebSocket notifications to reduce system overhead.
+
+### Frontend Fixes (Minor)
+- Corrected **total comments display** in `Body.jsx`
+
+
+
 ### Testing
 
 A test Lambda function provides end-to-end testing:
