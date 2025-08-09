@@ -157,6 +157,8 @@ public-comment-analysis/
 └── scripts/                # Utility scripts
 ```
 
+
+
 ### Recent Improvements
 The latest updates focus on improving **pipeline reliability**, **frontend accuracy**, and **workflow efficiency** across the clustering and analysis system.
 
@@ -184,8 +186,10 @@ The latest updates focus on improving **pipeline reliability**, **frontend accur
 - Streamlined completion handling in the **clustering pipeline**.
 - Eliminated unnecessary WebSocket notifications to reduce system overhead.
 
-### Frontend Fixes (Minor)
+#### Frontend Fixes (Minor)
 - Corrected **total comments display** in `Body.jsx`
+
+
 
 
 
