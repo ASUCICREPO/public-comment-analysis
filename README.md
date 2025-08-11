@@ -58,6 +58,7 @@ The system follows a serverless architecture on AWS:
 2. Go to "Model access" and click "Manage model access"
 3. Enable "Anthropic Claude 3.5 Sonnet" model
 
+
 ### Deployment Steps
 
 1. Configure AWS CLI:
@@ -71,25 +72,37 @@ The system follows a serverless architecture on AWS:
    cd public-comment-analysis
    ```
 
-3. Install global and project dependencies:
+3. Update Github repository and owner
+- Navigate to the public-comment-analysis.ts file under the bin/ folder
+- Update the values in the 'owner' and 'repository' parameters for the amplifyStack as seen below:
+``` bash
+1. const amplifyStack = new AmplifyStack(app, 'AmplifyStack', {
+   apiUrl: restApiStack.apiUrl,
+   webSocketEndpoint: webSocketStack.webSocketEndpoint,
+   owner: 'ASUCICREPO',  <- UPDATE HERE
+   repository: 'public-comment-analysis', <- UPDATE HERE
+ });
+``` 
+
+5. Install global and project dependencies:
    ```bash
    npm install -g aws-cdk
    npm install
    ```
 
-4. Bootstrap your AWS environment:
+6. Bootstrap your AWS environment:
    ```bash
    cdk bootstrap
    ```
 
-5. Deploy all stacks:
+7. Deploy all stacks:
    ```bash
    cdk deploy --all
    ```
 
-6. Note the outputs (API URLs and Amplify application URL)
+8. Note the outputs (API URLs and Amplify application URL)
 
-7. Changing remote access to your repository (PLEASE CLONE REPO BEFORE THIS STEP)
+9. Changing remote access to your repository (PLEASE CLONE REPO BEFORE THIS STEP)
     ```bash
    git remote remove origin
    git remote add origin "YOUR_PERSONAL_GIT_REPO"
