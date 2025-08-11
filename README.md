@@ -88,6 +88,15 @@ The system follows a serverless architecture on AWS:
 
 6. Note the outputs (API URLs and Amplify application URL)
 
+7. Changing remote access to your repository (PLEASE CLONE REPO BEFORE THIS STEP)
+    ```bash
+   git remote remove origin
+   git remote add origin "YOUR_PERSONAL_GIT_REPO"
+   git add .
+   git commit "Initial Commit"
+   git push
+   ```   
+
 ## Usage
 
 1. Access the Amplify application URL from deployment outputs
