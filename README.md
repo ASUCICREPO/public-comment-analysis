@@ -45,12 +45,6 @@ The system follows a serverless architecture on AWS:
 
 ### Preparing Secrets
 
-#### Adding the Regulations.gov API Key
-
-1. Navigate to AWS Secrets Manager
-2. Store a new secret named `regulations-gov-api-key`
-3. Enter your API key as plaintext
-
 #### Creating GitHub Access Token
 
 1. In GitHub: Settings > Developer settings > Personal access tokens
