@@ -40,6 +40,7 @@ The system follows a serverless architecture on AWS:
 - Access to Amazon Bedrock with Claude 3.5 Sonnet model enabled
 - GitHub account with access to the repository
 - GitHub personal access token with repository permissions
+- Docker should be running beforehand (use docker run)
 
 ## Deployment
 
