@@ -90,26 +90,32 @@ The system follows a serverless architecture on AWS:
    npm install
    ```
 
-6. Bootstrap your AWS environment:
-   ```bash
-   cdk bootstrap
-   ```
-
-7. Deploy all stacks:
-   ```bash
-   cdk deploy --all
-   ```
-
-8. Note the outputs (API URLs and Amplify application URL)
-
-9. Changing remote access to your repository (PLEASE CLONE REPO BEFORE THIS STEP)
+6. Changing remote access to your repository (PLEASE CLONE REPO BEFORE THIS STEP)
     ```bash
    git remote remove origin
    git remote add origin "YOUR_PERSONAL_GIT_REPO"
    git add .
    git commit "Initial Commit"
    git push
-   ```   
+   ```
+
+7. Update the regulations.gov API Key
+- Go to the AWS Secrets Manager
+- Navigate to `regulations-gov-api-key` and update the plaintext with the correct key
+
+9. Bootstrap your AWS environment:
+   ```bash
+   cdk bootstrap
+   ```
+
+10. Deploy all stacks:
+   ```bash
+   cdk deploy --all
+   ```
+
+11. Note the outputs (API URLs and Amplify application URL)
+
+
 
 ## Usage
 
