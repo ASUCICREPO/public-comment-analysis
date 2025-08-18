@@ -99,21 +99,23 @@ The system follows a serverless architecture on AWS:
    git push
    ```
 
-7. Update the regulations.gov API Key
-- Go to the AWS Secrets Manager
-- Navigate to `regulations-gov-api-key` and update the plaintext with the correct key
 
-9. Bootstrap your AWS environment:
+
+7. Bootstrap your AWS environment:
    ```bash
    cdk bootstrap
    ```
 
-10. Deploy all stacks:
+8. Deploy all stacks:
    ```bash
    cdk deploy --all
    ```
 
-11. Note the outputs (API URLs and Amplify application URL)
+9. Update the regulations.gov API Key
+- Go to the AWS Secrets Manager
+- Navigate to `regulations-gov-api-key` and update the plaintext with the correct key
+  
+10. Note the outputs (API URLs and Amplify application URL)
 
 
 
