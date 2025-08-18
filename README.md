@@ -50,7 +50,7 @@ The system follows a serverless architecture on AWS:
 
 1. In GitHub: Settings > Developer settings > Personal access tokens
 2. Generate a new token with `repo` and `admin:repo_hook` scopes
-3. Store in AWS Secrets Manager as `github-token`
+3. Store in AWS Secrets Manager as `github-token` by updating the plaintext
 
 ### Enabling Amazon Bedrock Model Access
 
