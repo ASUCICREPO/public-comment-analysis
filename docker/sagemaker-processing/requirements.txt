@@ -7,7 +7,7 @@ torch==2.0.1
 transformers==4.32.1
 huggingface-hub==0.16.4
 umap-learn==0.5.3
-hdbscan==0.8.33
+# hdbscan==0.8.33
 boto3==1.28.3
 psutil==5.9.5
 PyPDF2==3.0.1
