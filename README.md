@@ -124,7 +124,13 @@ The system follows a serverless architecture on AWS:
   
 10. Note the outputs (API URLs and Amplify application URL)
 
+11. Run Job in Amplify
+- Navigate to the Amplify service in the AWS Console.
+- Select the 'USDA-Comment-Analysis' Amplify App from the list
+- Press into the 'main deployment'
+- Click 'Run Job'
 
+This should kick off the initial deployment, after which you can start using the application by following the link in the Amplify Service.
 
 ## Usage
 
