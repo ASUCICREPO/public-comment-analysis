@@ -60,19 +60,33 @@ The system follows a serverless architecture on AWS:
 
 
 ### Deployment Steps
-
-1. Configure AWS CLI:
+1. Create IAM User and Access Keys
+- Open the IAM Console in AWS
+- Create a new IAM user
+- Under Attach Policies Directly, assign the required policies.
+- Go to the Security Credentials tab and generate new Access Keys.
+- Download or securely save the Access Key ID and Secret Access Key for later use.
+  
+2. Configure AWS CLI:
    ```bash
    aws configure
    ```
 
-2. Clone the repository:
+3. Clone the repository:
    ```bash
    git clone https://github.com/ASUCICREPO/public-comment-analysis.git
    cd public-comment-analysis
    ```
 
-3. Update Github repository and owner
+4. Install global and project dependencies:
+   ```bash
+   npm install -g aws-cdk
+   npm install
+   ```
+
+### FOLLOW IF REPOSITORY IS FORKED
+----------------------------------
+5. Update Github repository and owner [IF REPOSITORY IS FORKED]
 - Navigate to the public-comment-analysis.ts file under the bin/ folder
 - Update the values in the 'owner' and 'repository' parameters for the amplifyStack as seen below:
 ``` bash
@@ -82,15 +96,9 @@ The system follows a serverless architecture on AWS:
    owner: 'ASUCICREPO',  <- UPDATE HERE
    repository: 'public-comment-analysis', <- UPDATE HERE
  });
-``` 
+```
 
-5. Install global and project dependencies:
-   ```bash
-   npm install -g aws-cdk
-   npm install
-   ```
-
-6. Changing remote access to your repository (PLEASE CLONE REPO BEFORE THIS STEP)
+6. Changing remote access to your repository [IF REPOSITORY IS FORKED]
     ```bash
    git remote remove origin
    git remote add origin "YOUR_PERSONAL_GIT_REPO"
@@ -98,8 +106,7 @@ The system follows a serverless architecture on AWS:
    git commit "Initial Commit"
    git push
    ```
-
-
+----------------------------------
 
 7. Bootstrap your AWS environment:
    ```bash
