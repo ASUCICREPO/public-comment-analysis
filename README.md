@@ -2,12 +2,6 @@
 
 A serverless application for analyzing public comments from regulations.gov using advanced NLP techniques, clustering, and AI-powered insights.
 
-## Project Overview
-
-The USDA Public Comment Analysis system ingests public comments from regulations.gov, processes them using advanced natural language processing techniques, and generates insightful reports that include topic modeling, sentiment analysis, and detection of AI-generated content. This system assists USDA staff in efficiently analyzing public feedback on proposed regulations.
-
-![Architecture Diagram](docs/architecture.png)
-
 ## Disclaimers 
 
 Customers are responsible for making their own independent assessment of the information in this document.
@@ -21,6 +15,12 @@ Additionally, you are solely responsible for testing, security and optimizing al
 - (a) as-is and without warranties or representations of any kind,
 - (b) not suitable for production environments, or on production or other critical data, and
 - (c) to include shortcuts in order to support rapid prototyping such as, but not limited to, relaxed authentication and authorization and a lack of strict adherence to security best practices.
+
+## Project Overview
+
+The USDA Public Comment Analysis system ingests public comments from regulations.gov, processes them using advanced natural language processing techniques, and generates insightful reports that include topic modeling, sentiment analysis, and detection of AI-generated content. This system assists USDA staff in efficiently analyzing public feedback on proposed regulations.
+
+![Architecture Diagram](docs/architecture.png)
   
 All work produced is open source. More information can be found in the GitHub repo.
 
